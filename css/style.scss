@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,400&display=swap');
+
+$primary : #2d3950;
+$secondary : #15a4fa;
+$bg-color : #f9f6f6;
+
+body{
+	font-family: 'open sans', sans-serif;
+     color: $primary;
+}
+
+
+%gradient{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5ea5e2+50,72b3d6+50 */
+background: #5ea5e2; /* Old browsers */
+background: -moz-linear-gradient(left,  #5ea5e2 50%, #72b3d6 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #5ea5e2 50%,#72b3d6 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #5ea5e2 50%,#72b3d6 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ea5e2', endColorstr='#72b3d6',GradientType=1 ); /* IE6-9 */}
+
+%transition{
+	transition:all-0.3s-ease-in;
+	-webkit-transition:all-0.3s-ease-in;
+	-moz-transition:all-0.3s-ease-in;
+}
+.navbar{
+       background-color: $bg-color;
+       padding: 30px 0;
+	.navbar-nav{
+	 .nav-item{
+	  .nav-link{
+		    font-weight: 600;
+		    font-size: 16px;
+		    line-height: 2;
+		    color: $primary;
+            @extend %transition;
+
+		   &:hover{
+		    color:$secondary;
+		   }
+		    }
+	 }
+	}
+}
+.navbar-brand{
+	img{
+	      width: 80%;
+	}
+}
+
+.banner-section{
+       background:url(../images/Strict.jpg);
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       position:relative;
+
+       .click{
+       position:absolute;
+       color:#fff;
+       bottom:20px;
+       font-size:25px;
+       left:50%;
+       transform:translatex(-50%);
+       }
+
+      .row{
+          min-height:600px;
+          align-items:center;
+          justify-content:center;
+          text-align:center;
+
+	      h1{
+          font-size: 7rem;
+	      color: #fff;
+	      font-weight: 400;
+	      text-transform: uppercase;
+		}
+
+		  span{
+          background: $secondary;
+		  height: 5px;
+		  display: block;
+		  margin-bottom: 20px;
+		}
+		  p{
+          color: #fff;
+          font-size: 16px;
+		}
+      }
+	
+}
+
+.btn-custom{
+	border:1px solid $secondary;
+	padding: 5px 30px;
+	color:#fff;
+	@extend %transition;
+
+	&:hover{
+	background: $secondary;
+	color:#fff
+    
+	}
+}
+
+.about-us{
+    background: $bg-color;
+    text-align: center;
+    padding: 40px 0;
+
+	h2{
+     font-size: 25px;
+    font-weight:600;
+	}
+	p{
+    padding:30px 0;
+	}
+}
+
+
+
+.service-section{
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+
+    .service{
+    padding:100px 0;
+    text-align:center;
+
+    .icon{
+    @extend %gradient;
+    width:100px;
+    height:100px;
+    color:#fff;
+    font-size:50px;
+    text-align:center;
+    line-height:100px;
+    margin:auto;
+
+    i{
+    text-shadow: 1px 1px 2px #2d3950;
+    }
+    }
+    h2{
+    font-size: 22px;
+    font-weight: 600;
+    }
+    }
+}
+
+
+.image-section{
+	 background-color: $bg-color;
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+
+    .text{
+     padding:50px 0;
+     h3{
+     font-size:40px;
+     }
+	 h6{
+	 }
+    }
+	.row{
+   
+	img{
+	padding: 10px 0;
+	}
+	}
+}
+
+
+.dark-section{
+	background:$primary;
+	height: 500px;
+    margin-top:80px;
+
+    .text{
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+     padding:50px 0;
+
+    h3{
+    font-size:40px;
+    color:#fff;
+    }
+
+	h6{
+	color:#949393;
+	}
+    }
+	
+}
+
+.footer{
+	background-color: $bg-color;
+	padding:10px;
+	p{}
+	ul{
+
+	li{
+
+	a{
+	margin-left:10px;
+	background-color:$secondary;
+	color:#fff;
+	width:35px;
+    height:35px;
+    display:block;
+    text-align:center;
+    line-height:35px;
+    border:1px solid $secondary;
+    @extend %transition;
+
+	&:hover{
+    
+    background-color:transparent;
+    color:$secondary;
+	}
+	}
+	}
+	}
+}
+
+
+.form-control{
+  background:$primary;
+  border:1.5px solid #c3bebe85;
+}

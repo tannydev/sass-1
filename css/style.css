@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,400&display=swap");
+body {
+  font-family: 'open sans', sans-serif;
+  color: #2d3950; }
+
+.service-section .service .icon {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5ea5e2+50,72b3d6+50 */
+  background: #5ea5e2;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #5ea5e2 50%, #72b3d6 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5ea5e2 50%, #72b3d6 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5ea5e2 50%, #72b3d6 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ea5e2', endColorstr='#72b3d6',GradientType=1 );
+  /* IE6-9 */ }
+
+.navbar .navbar-nav .nav-item .nav-link, .btn-custom, .footer ul li a {
+  transition: all-0 0.3s-ease-in;
+  -webkit-transition: all-0 0.3s-ease-in;
+  -moz-transition: all-0 0.3s-ease-in; }
+
+.navbar {
+  background-color: #f9f6f6;
+  padding: 30px 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2;
+    color: #2d3950; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #15a4fa; }
+
+.navbar-brand img {
+  width: 80%; }
+
+.banner-section {
+  background: url(../images/Strict.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; }
+  .banner-section .click {
+    position: absolute;
+    color: #fff;
+    bottom: 20px;
+    font-size: 25px;
+    left: 50%;
+    transform: translatex(-50%); }
+  .banner-section .row {
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .banner-section .row h1 {
+      font-size: 7rem;
+      color: #fff;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .banner-section .row span {
+      background: #15a4fa;
+      height: 5px;
+      display: block;
+      margin-bottom: 20px; }
+    .banner-section .row p {
+      color: #fff;
+      font-size: 16px; }
+
+.btn-custom {
+  border: 1px solid #15a4fa;
+  padding: 5px 30px;
+  color: #fff; }
+  .btn-custom:hover {
+    background: #15a4fa;
+    color: #fff; }
+
+.about-us {
+  background: #f9f6f6;
+  text-align: center;
+  padding: 40px 0; }
+  .about-us h2 {
+    font-size: 25px;
+    font-weight: 600; }
+  .about-us p {
+    padding: 30px 0; }
+
+.service-section {
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .service-section .service {
+    padding: 100px 0;
+    text-align: center; }
+    .service-section .service .icon {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px;
+      margin: auto; }
+      .service-section .service .icon i {
+        text-shadow: 1px 1px 2px #2d3950; }
+    .service-section .service h2 {
+      font-size: 22px;
+      font-weight: 600; }
+
+.image-section {
+  background-color: #f9f6f6;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .image-section .text {
+    padding: 50px 0; }
+    .image-section .text h3 {
+      font-size: 40px; }
+  .image-section .row img {
+    padding: 10px 0; }
+
+.dark-section {
+  background: #2d3950;
+  height: 500px;
+  margin-top: 80px; }
+  .dark-section .text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0; }
+    .dark-section .text h3 {
+      font-size: 40px;
+      color: #fff; }
+    .dark-section .text h6 {
+      color: #949393; }
+
+.footer {
+  background-color: #f9f6f6;
+  padding: 10px; }
+  .footer ul li a {
+    margin-left: 10px;
+    background-color: #15a4fa;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #15a4fa; }
+    .footer ul li a:hover {
+      background-color: transparent;
+      color: #15a4fa; }
+
+.form-control {
+  background: #2d3950;
+  border: 1.5px solid #c3bebe85; }
+
+/*# sourceMappingURL=style.css.map */
